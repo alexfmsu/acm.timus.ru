@@ -1,4 +1,5 @@
 from sys import stdin
+from math import sqrt
 
 x = []
 
@@ -6,10 +7,12 @@ for line in stdin:
     _x = list(map(int, line.split()))
     x += _x[:]
 
-
-print(x)
+# print(x)
+# x = x.reverse()
+# print(x)
+for i in x[::-1]:
+    print("{:.4f}".format(sqrt(i)))
     # print(line)
-# from math import sqrt
 
 # while x = input():
 #     print(sqrt(x))
